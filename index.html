@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fafa;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #334155;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #64748b;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #334155;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .options {
+            margin-top: 12px;
+        }
+
+        .options label {
+            display: inline-block;
+            margin: 0 12px 8px 0;
+            font-weight: normal;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 30px;
+            background-color: #647f98;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #475569;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Contact Form</h1>
+        <p>Share your details and choose the options that suit you.</p>
+
+        <form>
+
+            <label for="name">Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"
+                   placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message"
+                      placeholder="How can we help?"></textarea>
+
+            <label>Courses of Interest</label>
+            <div class="options">
+                <label>
+                    <input type="checkbox" name="course" value="English">
+                    English
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="Math">
+                    Math
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="Science">
+                    Science
+                </label>
+
+                <label>
+                    <input type="checkbox" name="course" value="History">
+                    History
+                </label>
+            </div>
+
+            <label>Gender</label>
+            <div class="options">
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+            </div>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
